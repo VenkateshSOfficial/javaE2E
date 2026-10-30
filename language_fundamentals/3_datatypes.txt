@@ -92,3 +92,4 @@ range : not applicable, but allowed values are true / false
 char datatype :
 ====================
 size : 2 bytes (java is unicode based)
+range : 0 to 65535
