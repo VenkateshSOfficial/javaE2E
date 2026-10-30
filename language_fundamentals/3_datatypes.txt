@@ -1,0 +1,94 @@
+Java language is considered as strongly typed programming language
+In Java every variable and every expression has some type.
+Each and every datatype is clearly defined.
+Every assignment should be checked by compiler for type compatability
+Because of above reasons we can conclude stongly typed programming language.
+
+Java is not considered as pure object oriented programming language
+because several oop features are not satisfied by java(like operator overloading and multiple inheritance etc)
+more over we are depending on primitive datatypes which are non objects
+
+Primitive datatypes
+In total 8 
+
+1) numeric datatypes
+2) non numeric datatypes
+
+numberic
+integral data types
+byte
+short
+int 
+long
+
+floating point datatypes
+float
+double
+
+Non numberic datatypes
+char
+boolean
+
+except boolean and char others are called signed datatypes
+because we can represent both positive and negative numbers
+
+byte :
+size -> 1byte (8 bits)
+1st bit, MSB (most significant bit)
+sign bit
+max value -> 127
+min value -> -128
+range -> -128 to 127
+the most significant bit acts as sign bit.
+0-> positive number
+1-> negative number
++ve numbers represented in twos compliment form
+If we want to handle data via streams,network best datatype is byte either from the file or 
+from the network (file supported form or network supported form is byte)
+
+short datatype
+most rarely used datatype in java is short.
+size : 2 bytes (16 bits)
+range : -2^15 to 2^15-1 [-32768 to 32767]
+
+int
+The most commonly used datatype in java is int
+size : 4 bytes (32 bits)
+range : -2^31 to 2^31-1
+        
+long 
+sometimes maynot be enough to hold big values, then we should go for long type
+ex 1 : The amount of distance travelled by light in 1000 days, to hold this value
+     int may not be enough, we should go for long datatype.
+
+     long l=1,260000 X 60 X 60 X 24 X 1000 miles
+
+ex 2 : f.length() -> to hold no of characters in a big file 
+       length method is long and not int 
+
+size : 8 bytes
+range : -2^63 to 2^63-1
+
+float
+To represent decimal values we should go for floating point datatypes
+float and double
+
+float :
+decimal accurancy : 5 to 6
+size : 4 bytes
+range : -3.4e38 to 3.4e38
+
+double :
+decimal accuracy : 14 to 15
+size : 8 bytes
+range : -1.7e308 t0 1.7e308
+
+boolean datatype :
+=====================
+size of boolean not applicable.
+size based on virtual machine
+range : not applicable, but allowed values are true / false
+
+char datatype :
+====================
+size : 2 bytes (java is unicode based)
