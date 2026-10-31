@@ -1,0 +1,87 @@
+Literals :
+A constant value which can be assigned to the variable is called Literal
+EX : 
+---------------
+int  x = 10
+---------------
+int -> datatype
+x -> name of variable / identifer
+10 -> literal /constant assigned to variable X
+
+Integral literals :
+=====================
+For integral datatypes (byte, short, int, long) we can specify literal value in the below listed ways
+
+1. decimal literals :
+=====================
+base 10
+allowed digits are 0 to 9
+ex : int x = 10
+
+2. octal form : 
+=====================
+base 8
+allowed digits are 0 to 7
+int x = 010
+literal value should be prefixed with 0
+
+3. hexadecimal form :
+=====================
+base 16
+allowed digits are 0 to 9, a to f(alphabets in lower case and upper case, java not case sensitive in this case)
+literal value should be prefixed with 0x (or) 0X (capital and small x)
+ex : 
+int x = 0x10 (or) 0X10
+
+By default every integral literal is of int type
+but we can specify explicitly long by sufix with small l or L
+
+long l=10L or 10L
+
+There i no direct way to specify byte and short literals explicity.
+But indirectly we can specify
+Whenever we are assigning integral literal to the byte variable and if the value within The
+range of byte then compiler treats it automatically as byte literal.
+Similarly short literal also
+
+byte b=10 ; => under limit of byte 
+byte b=127;
+byte b=128 => PLP fount int req byte 
+
+floating point literals
+========================
+By default every floating point literal is of double type 
+Hence we can't assign directly to the float variable.
+but we can specify floating point literal as float type by sifixed with f or f
+
+ex : 
+============================================
+ 
+public class Literals{
+	public static void main(String[] args){
+		float f=123.456f;
+		System.out.println(f);
+	}
+}
+
+We can specify explicitly floating point literal as double type sufixed with d or D 
+we can specify floating point literals only in decimal and we can't specify in both octal and
+hexadecimal forms
+
+Ex : 
+======
+public class Literals{
+	public static void main(String[] args){
+		double d=0X123.456;
+		System.out.println(f);
+	}
+}
+
+O/P :
+=======
+.\Literals.java:3: error: malformed floating-point literal
+                double d=0X123.456;
+
+We can assign intergral literal directly to floating point variables and that integral  literal
+can be specified either in decimal or octal or hexadecimal forms 
+We can specify floating point literal in exponential form (scientfic notation)
